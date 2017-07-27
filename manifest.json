@@ -1,0 +1,30 @@
+{
+    "name": "Tab Keys",
+    "description": "Allows you to set keyboard shortcuts for certain tab actions such as selecting the next/prev tab.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "commands": {
+        "next-tab": {
+            "suggested_key": {
+                "default": "Ctrl+Right"
+            },
+            "description": "Select the next tab"
+        },
+        "prev-tab": {
+            "suggested_key": {
+                "default": "Ctrl+Left"
+            },
+            "description": "Select the previous tab"
+        },
+        "pin-tab": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+P"
+            },
+            "description": "Pin the current tab"
+        }
+    }
+}
