@@ -1,7 +1,7 @@
 {
     "name": "Tab Keys",
     "description": "Allows you to set keyboard shortcuts for certain tab actions such as selecting the next/prev tab.",
-    "version": "1.0",
+    "version": "1.1",
     "manifest_version": 2,
     "background": {
         "scripts": ["background.js"],
