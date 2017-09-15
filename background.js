@@ -47,5 +47,15 @@ chrome.commands.onCommand.addListener((command) => {
                 chrome.tabs.update(tab.id, { pinned: !tab.pinned });
             }
         });
+    } else if (command === 'dup-tab') {
+        chrome.tabs.query({
+            active: true,
+            currentWindow: true
+        }, tabs => {
+            const tab = tabs[0];
+            if (tab) {
+                chrome.tabs.duplicate(tab.id);
+            }
+        });
     }
 });

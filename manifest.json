@@ -8,6 +8,13 @@
         "persistent": false
     },
     "commands": {
+        "dup-tab": {
+            "suggested_key": {
+                "default": "Ctrl+D",
+                "mac": "Command+D"
+            },
+            "description": "Duplicate the current tab"
+        },
         "next-tab": {
             "suggested_key": {
                 "default": "Ctrl+Right"
